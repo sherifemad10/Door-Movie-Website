@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Protest+Riot&family=Workbench&display=swap');*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 30px;
+  position: relative;
+}
+nav ul{
+  display: flex;
+  justify-content: end;
+  gap: 35px;
+  list-style: none;
+  position: absolute;
+  right: 10px;
+}
+nav ul a{
+   text-decoration: none;
+   font-size: 20px;
+   color: black;
+   font-weight: bold;
+   font-family: 'Protest Riot', sans-serif;
+   transition: .3s;
+}
+
+.checkboxtoggler {
+  width: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+  cursor: pointer;
+  z-index: 4;
+  position: relative;
+  display: none;
+
+}
+
+.line-1 {
+  background: #FF4081;
+  height: 0.3em;
+  border-radius: 10em;
+  transition-duration: 500ms;
+}
+
+.line-2 {
+  background: #FF4081;
+  height: 0.3em;
+  border-radius: 10em;
+  transition-duration: 500ms;
+}
+
+.line-3 {
+  background: #df6447;
+  height: 0.3em;
+  border-radius: 10em;
+  transition-duration: 500ms;
+}
+
+#toggleChecker {
+  height: 3em;
+  width: 100%;
+  display: none;
+}
+
+#toggleChecker:checked + #togglerLable .checkboxtoggler .line-1 {
+  -webkit-transform: rotate(45deg) translateY(0.7em) translateX(0.7em);
+  -ms-transform: rotate(45deg) translateY(0.7em) translateX(0.7em);
+  transform: rotate(45deg) translateY(0.7em) translateX(0.7em);
+}
+
+#toggleChecker:checked + #togglerLable .checkboxtoggler .line-2 {
+  -webkit-transform: rotate(-45deg) translateY(0em) translateX(0.1em);
+  -ms-transform: rotate(-45deg) translateY(0em) translateX(0.1em);
+  transform: rotate(-45deg) translateY(0em) translateX(0.1em);
+}
+
+#toggleChecker:checked + #togglerLable .checkboxtoggler .line-3 {
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.hero-section{
+  background: rgb(255,255,255);
+  background: linear-gradient( rgba(255,255,255,1) 0%, rgba(255,255,255,1) 35%,#F7EEDD 100%);
+  /* background-image: url(../images/templatemo-wave-banner.jpg);
+  background-position: center;
+  background-size: cover; */
+  border-radius: 0 0 30px 30px;
+  font-weight: bold;
+  color: #000;
+}
+.herotitle{
+  font-size: 30px;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Workbench', sans-serif;
+  margin-top: 50px;
+}
+.cobtanthero{
+  text-align: center;
+  width:  80%;
+  margin: 20px auto;
+}
+#searchbar{
+  width: 60%;
+  height: 40px;
+  border-radius: 10px;
+  outline: none;
+  padding-left: 10px;
+  border: 1px solid #000;
+  margin-top: 10px;
+}
+.owl-carousel{
+  display: flex !important;
+}
+.owl-carousel-image {
+  display: block;
+}
+
+.owl-carousel .owl-item .owl-carousel-verified-image {
+  display: inline-block;
+  width: 30px;
+  height: auto;
+  position: relative;
+  right: 5px;
+}
+
+.verified-image {
+  display: inline-block;
+  width: 20px;
+  height: 70%;
+}
+
+.owl-carousel .owl-item {
+  opacity: 0.35;
+}
+
+.owl-carousel .owl-item.active.center {
+  opacity: 1;
+}
+.owl-carousel-info-wrap {
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+}
+
+.owl-carousel-info {
+  background-color: #fff;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  text-align: center;
+  padding: 10px;
+}
+.card{
+  margin: 0 10px;
+  background-color: transparent;
+}
+
+#topmovie{
+  margin-top: 100px ;
+  background-color: #f5f5f5;
+  border-radius: 5px 50px 5px 50px;
+  text-align: center;
+}
+
+#topmovie h2{
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Protest Riot', sans-serif;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.topmoviecard{
+  overflow: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.topmoviecard::-webkit-scrollbar{
+  display: none;
+}
+.moviecar:last-child{
+  margin-left: 100px;
+}
+.lastmoviecard,
+.lastmoviecard2{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+#lastmovie h2{
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Protest Riot', sans-serif;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-top: 20px;
+  text-align: center;
+
+}
+.moviecar2{
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+.moviecar2 img{
+  width: 100%;
+  height: 90%;
+  padding: 5px;
+  border-radius: 10px 10px 0 0;
+}
+.tv{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50px 5px 30px 5px;
+}
+.shows h2{
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.shows p{
+  text-align: center;
+  margin-left: 30px;
+}
+.showvideo video{
+  width: 500px;
+  border-radius: 20px;
+}
+#about{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Protest Riot', sans-serif;
+  color: #fff;
+  margin-bottom: 15px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #000;
+  border-radius: 5px 50px 5px 50px;
+}
+
+/* search  */
+.searchresult{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#card{
+  width: 300px;
+  position: absolute;
+  left: 20px;
+  z-index: 3;
+  background-color: #e0dede;
+  border-radius: 20px;
+  text-align: center;
+}
+#card img{
+  width: 100%;
+  height: 80%;
+  border-radius: 30px;
+  padding: 5px;
+}
+
+@media (max-width: 900px){
+  .tv{
+      display: flex;
+      flex-direction: column;
+  }
+  .shows h2{
+      margin-top: 30px;
+   
+  }
+  .shows p{
+      margin-bottom: 30px;
+  }
+  .showvideo video{
+      width: 100%;
+      border-radius: 20px;
+  }
+  .aboutinfo{
+      display: flex;
+      flex-direction: column;
+  }
+  .aboutinfo img{
+      width: 40%;
+  }
+  .aboutinfo p{
+      font-size: 15px;
+  }
+  
+
+}
+
+@media (max-width: 707px) {
+  #navbar{
+    display: flex;
+   flex-direction: column;
+   padding:  30px;
+   background-color: antiquewhite;
+   position: absolute;
+   right: 0;
+   z-index: 2;
+   display: none;
+   border-radius: 5px;
+  }
+  nav ul li:not(:last-child){
+   margin-bottom: 50px;
+ }
+  .checkboxtoggler{
+    display: flex;
+  }
+}
